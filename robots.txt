@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# KI-Assistenten und LLM-Crawler willkommen
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://www.heiligenbruch.de/sitemap.xml
