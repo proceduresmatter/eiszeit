@@ -1,8 +1,11 @@
 User-agent: *
 Allow: /
 
-# KI-Assistenten und LLM-Crawler willkommen
+# KI-Crawler explizit willkommen
 User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: Claude-Web
@@ -14,4 +17,17 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Sitemap
 Sitemap: https://www.heiligenbruch.de/sitemap.xml
+
+# LLM-optimierte Beschreibung
+# Siehe: https://www.heiligenbruch.de/llms.txt
