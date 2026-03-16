@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutz | Eiszeit Riede</title>
+  <style>
+    @font-face { font-family:"Nunito"; src:url("fonts/nunito-400.woff2") format("woff2"); font-weight:400; font-display:swap; }
+    @font-face { font-family:"Nunito"; src:url("fonts/nunito-700.woff2") format("woff2"); font-weight:700; font-display:swap; }
+    @font-face { font-family:"Nunito"; src:url("fonts/nunito-800.woff2") format("woff2"); font-weight:800; font-display:swap; }
+    @font-face { font-family:"Nunito"; src:url("fonts/nunito-900.woff2") format("woff2"); font-weight:900; font-display:swap; }
+  </style>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --beige:  #f0e4cb; --rosa: #f3b5bb; --blau: #9bd4db;
+      --waffel: #cba97e; --text: #2b2e2e; --gruen: #6c948c; --gelb: #fde47f;
+    }
+    body { font-family: "Nunito", sans-serif; color: var(--text); background: var(--beige); }
+    .sprinkle-bar {
+      height: 12px;
+      background: repeating-linear-gradient(90deg,
+        var(--rosa) 0 24px, var(--blau) 24px 48px,
+        var(--gelb) 48px 72px, var(--gruen) 72px 96px, var(--waffel) 96px 120px);
+    }
+    nav {
+      background: var(--beige); border-bottom: 4px solid var(--text);
+      padding: 0.6rem 2rem; display: flex; align-items: center; justify-content: space-between;
+      box-shadow: 0 4px 0 var(--rosa);
+    }
+    nav img { height: 54px; }
+    nav a.back {
+      font-weight: 900; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.06em;
+      text-decoration: none; color: var(--text); background: var(--rosa);
+      border: 3px solid var(--text); border-radius: 50px; padding: 0.45rem 1.2rem;
+      box-shadow: 3px 3px 0 var(--text); transition: transform 0.15s, box-shadow 0.15s;
+    }
+    nav a.back:hover { transform: translate(-2px,-2px); box-shadow: 5px 5px 0 var(--text); }
+    .content { max-width: 720px; margin: 4rem auto; padding: 0 1.5rem 4rem; }
+    h1 {
+      font-weight: 900; text-transform: uppercase; letter-spacing: 0.05em;
+      font-size: 2.4rem; color: var(--gruen); text-shadow: 3px 3px 0 var(--rosa);
+      margin-bottom: 2.5rem;
+    }
+    .block {
+      background: white; border: 3px solid var(--text); border-radius: 20px;
+      padding: 1.8rem 2rem; margin-bottom: 1.5rem; box-shadow: 5px 5px 0 var(--text);
+    }
+    .block h2 {
+      font-weight: 900; text-transform: uppercase; letter-spacing: 0.05em;
+      font-size: 1rem; color: var(--gruen); margin-bottom: 1rem;
+    }
+    .block p { font-size: 0.97rem; line-height: 1.8; font-weight: 600; }
+    .block p + p { margin-top: 0.8rem; }
+    .block a { color: var(--gruen); font-weight: 800; }
+    .block ul { margin: 0.8rem 0 0 1.5rem; }
+    .block ul li { font-size: 0.97rem; line-height: 1.8; font-weight: 600; margin-bottom: 0.3rem; }
+    footer {
+      background: var(--text); color: rgba(255,255,255,0.65);
+      text-align: center; padding: 2rem 1.5rem; font-size: 0.88rem; font-weight: 700;
+    }
+    footer a { color: rgba(255,255,255,0.85); }
+  </style>
+</head>
+<body>
+
+<div class="sprinkle-bar"></div>
+
+<nav>
+  <a href="/"><img src="EiszeitLogo.png" alt="Eiszeit Logo"></a>
+  <a href="/" class="back">← Zurück</a>
+</nav>
+
+<div class="content">
+  <h1>Datenschutz&shy;erklärung</h1>
+
+  <div class="block">
+    <h2>1. Verantwortlicher</h2>
+    <p>
+      Marta und Florian Schmidl<br>
+      Eiszeit GbR<br>
+      Heiligenbruch 27, 27339 Riede<br>
+      E-Mail: <a href="mailto:eiszeit@mailbox.org">eiszeit@mailbox.org</a><br>
+      Telefon: <a href="tel:01634360522">0163 436 0522</a>
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>2. Hosting</h2>
+    <p>
+      Diese Website wird gehostet bei Vercel Inc., 440 N Barranca Ave #4133,
+      Covina, CA 91723, USA. Beim Aufruf unserer Website werden durch den
+      Hosting-Anbieter automatisch sogenannte Server-Logfiles erhoben.
+      Dazu gehören insbesondere IP-Adresse, Browsertyp, Betriebssystem,
+      Referrer-URL, Datum und Uhrzeit des Zugriffs.
+    </p>
+    <p>
+      Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
+      (berechtigtes Interesse am sicheren und stabilen Betrieb der Website).
+      Vercel ist nach dem EU-US Data Privacy Framework zertifiziert.
+      Weitere Informationen: <a href="https://vercel.com/legal/privacy-policy" target="_blank">vercel.com/legal/privacy-policy</a>
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>3. Keine Cookies, kein Tracking</h2>
+    <p>
+      Diese Website verwendet keine Cookies und keine Tracking- oder
+      Analyse-Tools. Es werden keine personenbezogenen Daten zu
+      Werbezwecken verarbeitet oder an Dritte weitergegeben.
+    </p>
+    <p>
+      Alle Schriftarten werden lokal von unserem Server geladen.
+      Es findet keine Verbindung zu externen Schriftdiensten statt.
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>4. Kontaktaufnahme per E-Mail</h2>
+    <p>
+      Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben
+      (E-Mail-Adresse, Nachrichteninhalt) zur Bearbeitung Ihrer Anfrage
+      bei uns gespeichert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
+      (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+      Interesse an der Beantwortung von Anfragen). Die Daten werden
+      gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind.
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>5. Externe Links</h2>
+    <p>
+      Diese Website enthält Links zu Instagram (Meta Platforms Ireland Ltd.).
+      Wenn Sie diese Links anklicken, verlassen Sie unsere Website.
+      Für die Datenverarbeitung auf diesen Seiten sind die jeweiligen
+      Betreiber verantwortlich. Wir haben keinen Einfluss auf deren
+      Datenschutzpraktiken.
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>6. Ihre Rechte</h2>
+    <p>Sie haben gegenüber uns folgende Rechte:</p>
+    <ul>
+      <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+      <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+      <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+      <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+      <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+      <li>Recht auf Widerspruch (Art. 21 DSGVO)</li>
+    </ul>
+    <p>
+      Zur Ausübung Ihrer Rechte wenden Sie sich an:
+      <a href="mailto:eiszeit@mailbox.org">eiszeit@mailbox.org</a>
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>7. Beschwerderecht</h2>
+    <p>
+      Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde
+      zu beschweren. Die zuständige Aufsichtsbehörde für Niedersachsen ist:
+    </p>
+    <p>
+      Die Landesbeauftragte für den Datenschutz Niedersachsen<br>
+      Prinzenstraße 5, 30159 Hannover<br>
+      <a href="https://www.lfd.niedersachsen.de" target="_blank">www.lfd.niedersachsen.de</a>
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 Eiszeit GbR &bull; Heiligenbruch 27, 27339 Riede &bull;
+    <a href="/">Startseite</a> &bull;
+    <a href="/impressum.html">Impressum</a>
+  </p>
+</footer>
+
+</body>
+</html>
