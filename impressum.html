@@ -4,120 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impressum | Eiszeit Riede</title>
+  <link rel="icon" href="EiszeitLogo.png" type="image/png">
   <style>
-    @font-face { font-family:"Nunito"; src:url("fonts/nunito-400.woff2") format("woff2"); font-weight:400; font-display:swap; }
-    @font-face { font-family:"Nunito"; src:url("fonts/nunito-700.woff2") format("woff2"); font-weight:700; font-display:swap; }
-    @font-face { font-family:"Nunito"; src:url("fonts/nunito-800.woff2") format("woff2"); font-weight:800; font-display:swap; }
-    @font-face { font-family:"Nunito"; src:url("fonts/nunito-900.woff2") format("woff2"); font-weight:900; font-display:swap; }
-  </style>
-  <style>
+    @font-face { font-family:"Nunito"; src:url("fonts/nunito-variable.woff2") format("woff2"); font-weight:400 900; font-display:swap; }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --beige:  #f0e4cb;
-      --rosa:   #f3b5bb;
-      --blau:   #9bd4db;
-      --waffel: #cba97e;
-      --text:   #2b2e2e;
-      --gruen:  #6c948c;
-      --gelb:   #fde47f;
+      --bg: #fbf8f3; --paper: #ffffff; --text: #2b2e2e; --muted: #6b6f6e; --line: #e6dfd2;
+      --rosa: #f3b5bb; --blau: #9bd4db; --gruen: #6c948c; --gelb: #fde47f; --lila: #d4b8e0;
+      --rosa-soft: #fbe9eb;
     }
-    body {
-      font-family: "Nunito", sans-serif;
-      color: var(--text);
-      background: var(--beige);
-    }
-    .sprinkle-bar {
-      height: 12px;
-      background: repeating-linear-gradient(
-        90deg,
-        var(--rosa)  0 24px, var(--blau) 24px 48px,
-        var(--gelb)  48px 72px, var(--gruen) 72px 96px,
-        var(--waffel)96px 120px
-      );
+    body { font-family: "Nunito", system-ui, sans-serif; font-weight: 500; color: var(--text); background: var(--bg); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    .sprinkles {
+      height: 5px;
+      background: repeating-linear-gradient(90deg,
+        var(--rosa) 0 34px, transparent 34px 44px, var(--blau) 44px 78px, transparent 78px 88px,
+        var(--gelb) 88px 122px, transparent 122px 132px, var(--gruen) 132px 166px, transparent 166px 176px,
+        var(--lila) 176px 210px, transparent 210px 220px);
     }
     nav {
-      background: var(--beige);
-      border-bottom: 4px solid var(--text);
-      padding: 0.6rem 2rem;
-      display: flex; align-items: center; justify-content: space-between;
-      box-shadow: 0 4px 0 var(--rosa);
+      position: sticky; top: 0; z-index: 10; background: rgba(251,248,243,.9);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line);
     }
-    nav img { height: 54px; }
+    nav .wrap { max-width: 760px; margin: 0 auto; padding: 0 22px; height: 70px; display: flex; align-items: center; justify-content: space-between; }
+    nav img { height: 46px; width: auto; border-radius: 12px; }
     nav a.back {
-      font-weight: 900; font-size: 0.88rem;
-      text-transform: uppercase; letter-spacing: 0.06em;
-      text-decoration: none; color: var(--text);
-      background: var(--rosa);
-      border: 3px solid var(--text);
-      border-radius: 50px;
-      padding: 0.45rem 1.2rem;
-      box-shadow: 3px 3px 0 var(--text);
-      transition: transform 0.15s, box-shadow 0.15s;
+      text-decoration: none; font-weight: 800; font-size: .92rem; padding: .55rem 1.1rem;
+      border: 1.5px solid var(--text); border-radius: 999px; transition: background .2s;
     }
-    nav a.back:hover { transform: translate(-2px,-2px); box-shadow: 5px 5px 0 var(--text); }
-
-    .content {
-      max-width: 720px; margin: 4rem auto; padding: 0 1.5rem 4rem;
-    }
-    h1 {
-      font-weight: 900; text-transform: uppercase; letter-spacing: 0.05em;
-      font-size: 2.4rem; color: var(--gruen);
-      text-shadow: 3px 3px 0 var(--rosa);
-      margin-bottom: 2.5rem;
-    }
-    .block {
-      background: white;
-      border: 3px solid var(--text);
-      border-radius: 20px;
-      padding: 1.8rem 2rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 5px 5px 0 var(--text);
-    }
-    .block h2 {
-      font-weight: 900; text-transform: uppercase;
-      letter-spacing: 0.05em; font-size: 1rem;
-      color: var(--gruen); margin-bottom: 1rem;
-    }
-    .block p, .block address {
-      font-size: 0.97rem; line-height: 1.8; font-weight: 600;
-      font-style: normal; color: var(--text);
-    }
-    .block a { color: var(--gruen); font-weight: 800; }
-    .block p + p { margin-top: 0.6rem; }
-    .note {
-      background: var(--gelb);
-      border: 3px solid var(--text);
-      border-radius: 16px;
-      padding: 1rem 1.4rem;
-      font-size: 0.88rem; font-weight: 700; line-height: 1.6;
-      box-shadow: 4px 4px 0 var(--text);
-      margin-top: 1rem;
-    }
-    footer {
-      background: var(--text); color: rgba(255,255,255,0.65);
-      text-align: center; padding: 2rem 1.5rem;
-      font-size: 0.88rem; font-weight: 700;
-    }
-    footer a { color: rgba(255,255,255,0.85); }
+    nav a.back:hover { background: var(--rosa-soft); }
+    .content { max-width: 760px; margin: 0 auto; padding: 64px 22px 80px; }
+    h1 { font-weight: 900; letter-spacing: -.015em; line-height: 1.08; font-size: clamp(2rem, 5vw, 2.8rem); margin-bottom: 2.4rem; }
+    .block { background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: 1.6rem 1.8rem; margin-bottom: 1rem; }
+    .block h2 { font-weight: 800; font-size: 1.05rem; margin-bottom: .6rem; }
+    .block p, .block address, .block li { font-size: 1rem; font-style: normal; color: var(--text); }
+    .block p + p { margin-top: .7rem; }
+    .block ul { margin: .6rem 0 0 1.3rem; }
+    .block a, .note a { font-weight: 800; text-decoration-color: var(--rosa); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+    .note { background: #fdf6d8; border-radius: 18px; padding: 1rem 1.3rem; font-size: .95rem; margin-top: 1rem; }
+    footer { text-align: center; padding: 2.2rem 22px 2.6rem; font-size: .9rem; color: var(--muted); }
+    footer a { font-weight: 700; color: var(--text); text-decoration: none; margin: 0 .5rem; }
+    footer a:hover { color: var(--gruen); }
   </style>
 </head>
 <body>
 
-<div class="sprinkle-bar"></div>
+<div class="sprinkles"></div>
 
 <nav>
-  <a href="/"><img src="EiszeitLogo.png" alt="Eiszeit Logo"></a>
-  <a href="/" class="back">← Zurück</a>
+  <div class="wrap">
+    <a href="index.html"><img src="img/logo.webp" alt="Eiszeit Logo" width="46" height="46"></a>
+    <a href="index.html" class="back">← Zur Startseite</a>
+  </div>
 </nav>
 
 <div class="content">
   <h1>Impressum</h1>
 
   <div class="block">
-    <h2>Angaben gemäß §5 TMG</h2>
+    <h2>Angaben gemäß § 5 DDG</h2>
     <address>
-      Marta und Florian Schmidl<br>
-      Eiszeit GbR<br>
+      Eiszeit GbR (Eiszeit Riede)<br>
+      vertreten durch die Gesellschafter Marta Schmidl und Florian Schmidl<br>
       Heiligenbruch 27<br>
       27339 Riede
     </address>
@@ -125,36 +73,24 @@
 
   <div class="block">
     <h2>Kontakt</h2>
-    <p>Telefon: <a href="tel:01634360522">0163 436 0522</a></p>
+    <p>Telefon: <a href="tel:+491634360522">0163 436 0522</a></p>
     <p>E-Mail: <a href="mailto:eiszeit@mailbox.org">eiszeit@mailbox.org</a></p>
   </div>
 
   <div class="block">
     <h2>Umsatzsteuer</h2>
     <p>
-      Gemäß §19 UStG wird keine Umsatzsteuer berechnet
+      Gemäß § 19 UStG wird keine Umsatzsteuer berechnet
       (Kleinunternehmerregelung).
     </p>
   </div>
 
   <div class="block">
-    <h2>Haftung für Inhalte</h2>
+    <h2>Haftung für Inhalte und Links</h2>
     <p>
-      Als Diensteanbieter sind wir gemäß §7 Abs.1 TMG für eigene Inhalte
-      auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
-      Nach §§8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
-      verpflichtet, übermittelte oder gespeicherte fremde Informationen
-      zu überwachen.
-    </p>
-  </div>
-
-  <div class="block">
-    <h2>Haftung für Links</h2>
-    <p>
-      Unser Angebot enthält Links zu externen Websites Dritter, auf deren
-      Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten
-      Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten
-      verantwortlich.
+      Für eigene Inhalte sind wir nach den allgemeinen Gesetzen verantwortlich.
+      Für Inhalte verlinkter fremder Seiten ist der jeweilige Anbieter oder
+      Betreiber verantwortlich.
     </p>
   </div>
 
@@ -170,20 +106,15 @@
   </div>
 
   <div class="note">
-    Streitschlichtung: Die EU-Kommission stellt eine Plattform zur
-    Online-Streitbeilegung (OS) bereit:
-    <a href="https://ec.europa.eu/consumers/odr" target="_blank">ec.europa.eu/consumers/odr</a>.
-    Wir sind nicht bereit und nicht verpflichtet, an einem
-    Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
-    teilzunehmen.
+    Verbraucherstreitbeilegung: Wir sind nicht bereit und nicht verpflichtet, an einem
+    Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
   </div>
 </div>
 
+<div class="sprinkles"></div>
 <footer>
-  <p>© 2025 Eiszeit GbR &bull; Heiligenbruch 27, 27339 Riede &bull;
-    <a href="/">Startseite</a> &bull;
-    <a href="/datenschutz.html">Datenschutz</a>
-  </p>
+  <p><a href="index.html">Startseite</a><a href="datenschutz.html">Datenschutz</a></p>
+  <p>© 2026 Eiszeit GbR · Heiligenbruch 27, 27339 Riede</p>
 </footer>
 
 </body>

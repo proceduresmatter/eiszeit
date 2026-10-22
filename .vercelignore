@@ -1,0 +1,12 @@
+# Allowlist: nur die oeffentliche Website wird deployt
+/*
+!/index.html
+!/impressum.html
+!/datenschutz.html
+!/llms.txt
+!/robots.txt
+!/sitemap.xml
+!/EiszeitLogo.png
+!/img
+!/fonts
+/fonts/nunito-[0-9]*.woff2

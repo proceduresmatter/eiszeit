@@ -1,0 +1,21 @@
+# Nur Website-Dateien gehoeren ins Repo. Interne Unterlagen bleiben lokal.
+/Archiv/
+/Design/
+/Dokumente/
+/Postkarte/
+/Schilder/
+/Scripts/
+/bilder/
+/extracted_*/
+*.docx
+*.doc
+*.pdf
+*.py
+*_b64.txt
+Thumbs.db
+/foto*.png
+/alleswirdgut.png
+/kamera_piktogramm.png
+/instagram.webp
+/fonts/nunito-[0-9]*.woff2
+.vercel
