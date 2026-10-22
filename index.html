@@ -381,6 +381,24 @@
       transform: rotate(-4deg);
     }
 
+    .neu-dabei { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; max-width: 760px; margin: 4rem auto 0; }
+    @media (max-width: 560px) { .neu-dabei { gap: 12px; } }
+    .neu-dabei figure {
+      position: relative; border-radius: var(--r); overflow: hidden; background: var(--paper);
+      border: 6px solid var(--paper);
+      box-shadow: 0 1px 2px rgba(43,46,46,.06), 0 18px 40px -20px rgba(43,46,46,.35);
+    }
+    .neu-dabei figure:nth-child(1) { transform: rotate(-1.5deg); }
+    .neu-dabei figure:nth-child(2) { transform: rotate(1.5deg); }
+    .neu-dabei img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 16px; }
+    .neu-dabei figcaption {
+      position: absolute; left: 12px; top: 12px; background: var(--paper); border-radius: 999px;
+      padding: .3rem .85rem .3rem .4rem; font-weight: 800; font-size: .9rem; display: flex; align-items: center; gap: .2rem;
+    }
+    .neu-dabei figcaption .neu { margin-left: 0; }
+    .ki-tag { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .ki-note { text-align: center; color: var(--muted); font-size: .88rem; margin-top: 1.4rem; }
+
     .party { margin-top: 5rem; text-align: center; }
     .party-title { font-weight: 900; font-size: clamp(1.6rem, 3.4vw, 2.2rem); letter-spacing: -.01em; margin-bottom: 2.4rem; }
     .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: left; }
@@ -547,6 +565,20 @@
         <div class="event reveal"><span class="em" aria-hidden="true">🍿</span><div><h3>Popcorn <span class="neu">Neu</span></h3><p>Frisch und duftend, für Groß und Klein.</p></div></div>
       </div>
     </div>
+
+    <div class="neu-dabei">
+      <figure class="reveal">
+        <img src="img/hotdog-ki.webp" alt="KI-generierte Darstellung: unser Hot-Dog-Wärmer mit rot-weißem Dach auf einem Gartentisch" width="597" height="799" loading="lazy">
+        <span class="ki-tag">KI-generiertes Bild</span>
+        <figcaption><span class="neu">Neu</span> Hot Dogs</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="img/popcorn-ki.webp" alt="KI-generierte Darstellung: unsere rote Retro-Popcornmaschine auf einem Gartentisch" width="597" height="799" loading="lazy">
+        <span class="ki-tag">KI-generiertes Bild</span>
+        <figcaption><span class="neu">Neu</span> Popcorn</figcaption>
+      </figure>
+    </div>
+    <p class="ki-note reveal">Symbolbilder, KI-generiert auf Basis unserer Geräte. Das echte Gerät kann im Detail abweichen.</p>
 
     <div class="party">
       <h3 class="party-title reveal">Alles für eine gelungene Feier.</h3>
