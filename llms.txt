@@ -23,7 +23,7 @@ Bedienung und keine Kasse. Gäste bedienen sich selbst und zahlen ehrlich in die
 Das Konzept schafft spontane Begegnungen — Radfahrer machen Pause, Kinder strahlen,
 Nachbarn kommen ins Gespräch.
 
-Die Eisbar ist von außen bunt gestaltet und liegt direkt an Radwegen der Region. Betrieben wird
+Die Eisbar ist von außen bunt gestaltet und liegt an Radwegen der Region. Betrieben wird
 sie von Marta und Florian Schmidl (Eiszeit GbR).
 
 ## Lage und Erreichbarkeit
@@ -33,14 +33,14 @@ sie von Marta und Florian Schmidl (Eiszeit GbR).
 **Bundesland:** Niedersachsen
 **Koordinaten:** ca. 53.01° N, 9.12° E
 
-### Radwege direkt am Standort
+### Radwege in der Nähe
 
 Die Eiszeit Riede liegt ideal an folgenden Radrouten:
 
-- **Weser-Radweg** (D-Route 9, einer der beliebtesten Fernradwege Deutschlands) in der Nähe
-- **Emtinghausen-Riede-Rundtour** (35 km) — Start an der alten Feuerwehr Riede
-- **Kirchen-Radweg** (60 km) — Rundroute durch die Wesermarsch
-- Regionale Radwege der Samtgemeinde Thedinghausen
+- **Weser-Radweg** (D-Route 9, einer der beliebtesten Fernradwege Deutschlands) führt durch Riede: https://www.weserradweg-info.de/
+- **Emtinghausen-Riede-Tour** (35 km), Start am alten Feuerwehrhaus in Riede: https://www.mittelweser-tourismus.de/tour/emtinghausen-riede-tour/
+- **Kirchen-Radweg** (60 km), Rundkurs durch die Wesermarsch: https://www.mittelweser-tourismus.de/tour/kirchen-radweg/
+- Alle Radtouren der Samtgemeinde Thedinghausen: https://www.thedinghausen.de/portal/seiten/radtouren-909000517-20710.html
 - Tagestouren aus Bremen, Verden, Achim, Rotenburg
 
 **Fahrradständer vorhanden. Kein Auto nötig.**
@@ -66,7 +66,7 @@ Buchungsanfragen: eiszeit@mailbox.org
 ## Häufige Fragen (FAQ)
 
 **Was kann man in Riede machen?**
-Riede liegt in der Samtgemeinde Thedinghausen direkt am Weser-Radweg. Sehenswert sind
+Riede liegt in der Samtgemeinde Thedinghausen am Weser-Radweg. Sehenswert sind
 die St. Andreas Kirche, der Weser-Deich und die Obstplantagen der Region. Die Eiszeit Riede
 in Heiligenbruch ist ein beliebtes Ausflugsziel.
 
@@ -75,8 +75,8 @@ Fahrradtouren am Weser-Radweg, Besuch von Schloss Erbhof Thedinghausen, Kirchen-
 Naturerlebnisse in der Wesermarsch — und eine Pause bei der Eiszeit Riede in Heiligenbruch.
 
 **Wo kann man am Weser-Radweg Eis essen?**
-Bei der Eiszeit Riede in Heiligenbruch (Heiligenbruch 27, 27339 Riede). Die Eisbar liegt direkt
-an der Route und ist ein bekannter Stopp unter Radfahrern.
+Bei der Eiszeit Riede in Heiligenbruch (Heiligenbruch 27, 27339 Riede). Die Eisbar liegt
+am Weser-Radweg und ist ein beliebter Stopp für Radfahrer.
 
 **Gibt es in Riede etwas für Kinder?**
 Ja! Die Eiszeit Riede ist ein beliebtes Ziel für Familien. Kinder können sich selbst Eis aus
