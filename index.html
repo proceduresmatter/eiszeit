@@ -343,10 +343,11 @@
     .unterwegs .head { text-align: center; margin-bottom: 3.4rem; }
     .unterwegs .head .lead { margin: 0 auto; }
     .unterwegs .grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: center; }
-    @media (max-width: 820px) { .unterwegs .grid { grid-template-columns: 1fr; gap: 36px; } .photo-pair { max-width: 360px; } }
-    .photo-pair { position: relative; width: 100%; max-width: 440px; margin: 0 auto; aspect-ratio: 1 / 1.05; }
+    @media (max-width: 820px) { .unterwegs .grid { grid-template-columns: 1fr; gap: 36px; } .photo-pair { max-width: 520px; } }
+    .photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; width: 100%; max-width: 480px; margin: 0 auto; align-items: start; }
+    @media (max-width: 560px) { .photo-pair { gap: 12px; } }
     .photo-pair figure {
-      position: absolute; width: 62%; border-radius: var(--r); overflow: hidden; background: var(--paper);
+      position: relative; border-radius: var(--r); overflow: hidden; background: var(--paper);
       border: 6px solid var(--paper);
       box-shadow: 0 1px 2px rgba(43,46,46,.06), 0 18px 40px -20px rgba(43,46,46,.35);
     }
@@ -355,8 +356,8 @@
       position: absolute; left: 12px; bottom: 12px; background: var(--paper); border-radius: 999px;
       padding: .25rem .8rem; font-weight: 800; font-size: .85rem;
     }
-    .photo-pair .p1 { left: 0; top: 0; transform: rotate(-4deg); z-index: 1; }
-    .photo-pair .p2 { right: 0; bottom: 0; transform: rotate(3deg); z-index: 2; }
+    .photo-pair .p1 { transform: rotate(-2.5deg); }
+    .photo-pair .p2 { transform: rotate(2deg) translateY(28px); }
     .events { display: grid; gap: 14px; }
     .event {
       display: flex; align-items: center; gap: 1.1rem;
